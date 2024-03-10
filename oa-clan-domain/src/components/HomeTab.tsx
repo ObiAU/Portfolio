@@ -25,12 +25,14 @@ const Home: React.FC = () => {
     return (
         
         < Center position='relative' flex="1" pl={4} pr={0.5} pt={20} pb={2}>
+            <Box></Box>
+            <Spacer/>
         <Flex direction={{ base: 'column', md: 'row' }} alignItems="center" justifyContent="center" 
         // bg={boxColor}
         // minHeight="100vh" 
         // overflow="auto"
         >
-            <VStack align='center' spacing={4} >
+            <VStack align='center' spacing={4} pl={20}>
             <Text fontSize="5xl" alignContent='center' fontWeight="bold" mt="4">Obiefuna Anthony-Uzoeto</Text>
             <Text as='cite' fontSize="3xl">
                 {/* My name is Obi and I am a  */}
@@ -45,9 +47,11 @@ const Home: React.FC = () => {
             </VStack>
         </Flex>
         <Spacer/>
+        <Box>
         <Image src={hshotMod} boxSize="290px" 
             // borderRadius="full" 
             alt="Profile Picture"/>
+        </Box>
 
         </Center>
 
